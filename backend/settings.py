@@ -41,14 +41,16 @@ class _UiSettings(BaseSettings):
         env_ignore_empty=True
     )
 
-    title: str = "Contoso"
+    title: str = "WebSan Solutions Inc."
     logo: Optional[str] = None
     chat_logo: Optional[str] = None
     chat_title: str = "Start chatting"
-    chat_description: str = "This chatbot is configured to answer your questions"
+    chat_description: str = "This chatbot is configured to answer your questions about the EasyPost Service Connector application."
     favicon: str = "/favicon.ico"
-    show_share_button: bool = True
-    show_chat_history_button: bool = True
+    show_share_button: bool = False
+    show_chat_history_button: bool = False
+    chat_version: str = "Information is accurate as of 2025-10-31, based on application version 25.7.0.0."
+
 
 
 class _ChatHistorySettings(BaseSettings):
@@ -758,7 +760,7 @@ class _BaseSettings(BaseSettings):
         env_ignore_empty=True
     )
     datasource_type: Optional[str] = None
-    auth_enabled: bool = True
+    auth_enabled: bool = False
     sanitize_answer: bool = False
     use_promptflow: bool = False
 
