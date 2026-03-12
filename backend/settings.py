@@ -41,15 +41,15 @@ class _UiSettings(BaseSettings):
         env_ignore_empty=True
     )
 
-    title: str = "WebSan Solutions Inc."
+    title: str = "Rand Group"
     logo: Optional[str] = None
     chat_logo: Optional[str] = None
     chat_title: str = "Start chatting"
-    chat_description: str = "This chatbot is configured to answer your questions about the EasyPost Service Connector application."
+    chat_description: str = "This chatbot is configured to answer your questions about the Vendor Contract Management application."
     favicon: str = "/favicon.ico"
     show_share_button: bool = False
     show_chat_history_button: bool = False
-    chat_version: str = "Information is accurate as of 2025-10-31, based on application version 25.7.0.0."
+    chat_version: str = "Information is accurate as of 2026-03-04, based on application version 25.10.0.0."
 
 
 
